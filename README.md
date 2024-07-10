@@ -1,11 +1,12 @@
 # [ECCV 2024] EntAugment: Entropy-Driven Adaptive Data Augmentation Framework for Image Classification
 
 ## Introduction
-This is the implementation of EntAugment and EntLoss, as used in the paper.
-
-You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
+This is the implementation of EntAugment and EntLoss, as used in the paper. In this paper, we propose a tuning-free and adaptive DA framework, which dynamically assesses and adjusts the augmentation magnitudes for each sample during training.
+You can directly start off using our implementations.
 
 ## Getting Started
+- Codes support Python3
+
 - Clone this directory and `cd`  into it.
  
 `git clone https://github.com/Jackbrocp/EntAugment` 
@@ -25,18 +26,19 @@ You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
 
 ## Run Data Augmentation
 ### Prepare the datasets
+Download the datasets (e.g., CIFAR datasets) and put the datasets under the folder ```data/```
 
 ### Parameters
 ```--conf```，path to the config file, e.g., ```confs/resnet18.yaml```
 
 ### Training Examples
-Apply EntAugment as a data augmentation method to train ResNet18 model on CIFAR10 dataset.
+Employ EntAugment as a data augmentation method to train ResNet18 model on CIFAR10 dataset.
 
-```python train.py --conf confs/resnet18.yaml --dataset CIFAR10```
+```python train_EntAugment.py --conf confs/resnet18.yaml --dataset CIFAR10```
 
-Apply EntAugment and EntLoss to train ResNet18 model on CIFAR100 dataset.
+Employ EntAugment and EntLoss to train ResNet18 model on CIFAR100 dataset.
 
-```python train_entloss.py --conf confs/resnet18.yaml --dataset CIFAR100```
+```python train_EntLoss.py --conf confs/resnet18.yaml --dataset CIFAR100```
 
 ## Acknowledge 
 Part of our implementation is adopted from the TrivialAugment repositories.
