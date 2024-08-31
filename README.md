@@ -41,8 +41,8 @@ Employ EntAugment and EntLoss to train ResNet18 model on CIFAR100 dataset.
 ```python train_EntLoss.py --conf confs/resnet18.yaml --dataset CIFAR100```
 
 ## Acknowledge 
-Part of our implementation is adopted from the TrivialAugment repositories.
-[TrivialAugment](https://github.com/automl/trivialaugment)
+Part of our implementation is adopted from the [TrivialAugment](https://github.com/automl/trivialaugment) repositories.
+
 
 ## Citation
 If you find this repository useful in your research, please cite our paper:
