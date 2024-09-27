@@ -48,5 +48,10 @@ Part of our implementation is adopted from the [TrivialAugment](https://github.c
 If you find this repository useful in your research, please cite our paper:
 
 `
-To be updated
+@article{yang2024entaugment,
+  title={EntAugment: Entropy-Driven Adaptive Data Augmentation Framework for Image Classification},
+  author={Yang, Suorong and Shen, Furao and Zhao, Jian},
+  journal={arXiv preprint arXiv:2409.06290},
+  year={2024}
+}
 `
